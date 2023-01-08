@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Save data to database</h1>
+    <form action="add-data.php" method="post">
+      <label for="a-input">A Input:</label><br>
+      <input type="text" id="a-input" name="a-input"><br>
+      <label for="b-input">B Input:</label><br>
+      <input type="number" id="b-input" name="b-input" min="0" step="1"><br>
+      <label for="c-input">C Input:</label><br>
+      <input type="text" id="c-input" name="c-input"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>Display database results</h1>
+    <form action="display-a.php" method="post">
+      <input type="submit" value="Display A">
+    </form>
+
+    <form action="display-abc.php" method="post">
+      <input type="submit" value="Display A, B, C">
+    </form>
+
+    <form action="display-cb.php" method="post">
+      <input type="submit" value="Display C, B">
+    </form>
+
+    <form action="display-b-asc.php" method="post">
+      <input type="submit" value="Display B (ascending)">
+    </form>
+
+    <form action="display-b-desc.php" method="post">
+      <input type="submit" value="Display B (descending)">
+    </form>
+
+    <div id="results">
+
+    </div>
+
+  </body>
+</html>
